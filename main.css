@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{ box-sizing: border-box;
+
+/*
+.fraunces-<uniquifier> {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+
+    .montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+}
+
+*/    
+    
+}
+:root{
+    --Green500: hsl(158, 36%, 37%);
+    --Green700: hsl(158, 42%, 18%);
+    --Black: hsl(212, 21%, 14%);
+    --Grey: hsl(228, 12%, 48%);
+    --Cream: hsl(30, 38%, 92%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+   
+    background-color: var(--Cream);
+}
+.conteiner{
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 440px;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+
+  
+}
+
+#image{
+    background-image: url(image-product-desktop.jpg);
+    background-size: 350px;
+    background-repeat: no-repeat;
+    border-radius: 10px 0 0 10px;
+    
+}
+.card-titulo{
+    background: var(--White);
+    border-radius: 0 10px 10px 0;
+    padding: 0 0.5rem;
+}
+.card-titulo h1{
+     font-family: "Fraunces", serif;
+}
+.card-titulo  h3{
+    color: var(--Grey);
+     font-family: "Montserrat", sans-serif;
+     font-weight: 400;
+     text-transform: uppercase;
+    
+}
+.card-titulo .texto-card{
+    color: var(--Grey);
+    letter-spacing: 1px;
+     font-family: "Montserrat", sans-serif;
+}
+.desconto{
+      font-family: "Fraunces", serif;
+    color: var(--Green500);
+    font-weight: 900;
+    font-size: 2rem;
+    
+}
+.princer{
+     font-family: "Fraunces", serif;
+    position: relative;
+    top: -5px;
+    color: var(--Grey);
+    margin-left: 20px;
+    text-decoration: line-through;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.card-button{
+    position: relative;
+    top: -15px;
+    text-align: center;
+}
+button{
+    
+    font-family: "Fraunces", serif;
+    border-radius: 5px;
+    border: none;
+    width: 220px;
+    padding: 10px;
+    background: var(--Green500);
+}
+.text-button{
+     font-family: "Montserrat", sans-serif;
+     font-weight: 600;
+    color: var(--White);
+    position: relative;
+    top: -3px;
+    left: 10px;
+}
+
+ /*tela de celular*/
+    
+
+   
+@media (max-width:700px) {
+ .conteiner{
+    display: grid;
+    grid-template-columns: 350px ;
+    grid-template-rows: 300px; 
+  
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+
+  
+}
+#image{
+    background-image: url(image-product-mobile.jpg);
+    background-size: 350px;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 0 0;
+    
+}
+.card-titulo{
+    background: var(--White);
+    padding-bottom: 30px;
+    border-radius: 0 0px 10px 10px ;
+}
+.card-button{
+    position: relative;
+    top: 1px;
+    text-align: center;
+}
+
+
+    
+   
+}
