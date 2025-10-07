@@ -57,10 +57,10 @@ body{
     border-radius: 0 10px 10px 0;
     padding: 0 0.5rem;
 }
-.card-titulo h1{
+.card-titulo h2{
      font-family: "Fraunces", serif;
 }
-.card-titulo  h3{
+.card-titulo  h1{
     color: var(--Grey);
      font-family: "Montserrat", sans-serif;
      font-weight: 400;
